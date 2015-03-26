@@ -6,17 +6,20 @@
         </PWS_Special>
         <global>
             <blocks>
-                <special>
+                <pws_special>
                     <class>PWS_Special_Block</class>
-                </special>
+                </pws_special>
                 <catalog>
                     <rewrite>
-                        <Catalog_Product_Sales>
-                            PWS_Special_Block_Catalog_Product_Sales
-                        </Catalog_Product_Sales>
+                        <catalog_product_sales>PWS_Special_Block_Catalog_Product_Sales</catalog_product_sales>
                     </rewrite>
                 </catalog>
             </blocks>
+            <helpers>
+                <pws_special>
+                    <class>PWS_Special_Block</class>
+                </pws_special>
+            </helpers>
         </global>
     </modules>
 </config>
