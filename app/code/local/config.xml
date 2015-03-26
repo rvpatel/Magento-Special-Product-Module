@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <PWS_Special>
+            <version>1.0.0</version>
+        </PWS_Special>
+        <global>
+            <blocks>
+                <special>
+                    <class>PWS_Special_Block</class>
+                </special>
+                <catalog>
+                    <rewrite>
+                        <Catalog_Product_Sales>
+                            PWS_Special_Block_Catalog_Product_Sales
+                        </Catalog_Product_Sales>
+                    </rewrite>
+                </catalog>
+            </blocks>
+        </global>
+    </modules>
+</config>
