@@ -4,19 +4,17 @@
         <PWS_Special>
             <version>1.0.0</version>
         </PWS_Special>
-        <global>
-            <blocks>
-                <special>
-                    <class>PWS_Special_Block</class>
-                </special>
-                <catalog>
-                    <rewrite>
-                        <Catalog_Product_Sales>
-                            PWS_Special_Block_Catalog_Product_Sales
-                        </Catalog_Product_Sales>
-                    </rewrite>
-                </catalog>
-            </blocks>
-        </global>
     </modules>
+    <global>
+        <blocks>
+            <pws_special>
+                <class>PWS_Special_Block</class>
+            </pws_special>
+        </blocks>
+        <helpers>
+            <pws_special>
+                <class>PWS_Special_Helper</class>
+            </pws_special>
+        </helpers>
+    </global>
 </config>

@@ -1,6 +1,8 @@
 <?php 
-class PWS_Special_Block_Catalog_Product_Sales extends Mage_Catalog_Block_Product_List{
-    protected function _getProductCollection(){
+class PWS_Special_Block_Catalog_Product_List extends Mage_Catalog_Block_Product_List
+{
+    protected function _getProductCollection()
+    {
         if (is_null($this->_productCollection)) {
             $todayStartOfDayDate  = Mage::app()->getLocale()->date()
                 ->setTime('00:00:00')
