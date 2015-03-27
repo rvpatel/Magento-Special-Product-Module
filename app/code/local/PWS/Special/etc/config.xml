@@ -11,7 +11,7 @@
                 </pws_special>
                 <catalog>
                     <rewrite>
-                        <catalog_product_sales>PWS_Special_Block_Catalog_Product_Sales</catalog_product_sales>
+                        <catalog_product_list>PWS_Special_Block_Catalog_Product_List</catalog_product_sales>
                     </rewrite>
                 </catalog>
             </blocks>
