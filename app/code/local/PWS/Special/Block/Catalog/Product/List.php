@@ -12,6 +12,7 @@ class PWS_Special_Block_Catalog_Product_List extends Mage_Catalog_Block_Product_
                 ->toString(Varien_Date::DATETIME_INTERNAL_FORMAT);
             $collection = Mage::getResourceModel('catalog/product_collection');
             $collection->setVisibility(Mage::getSingleton('catalog/product_visibility')->getVisibleInCatalogIds());
+            $collection->addFinalPrice()->getSelect()->where('price_index.final_price < price_index.price');
             $collection = $this->_addProductAttributesAndPrices($collection)
                 ->addStoreFilter()
                 ->addAttributeToFilter('special_from_date', array('or'=> array(
@@ -27,7 +28,7 @@ class PWS_Special_Block_Catalog_Product_List extends Mage_Catalog_Block_Product_
                         array('attribute' => 'special_from_date', 'is'=>new Zend_Db_Expr('not null')),
                         array('attribute' => 'special_to_date', 'is'=>new Zend_Db_Expr('not null'))
                         )
-                  )
+                )
             ;
             $this->_productCollection = $collection;
         }
